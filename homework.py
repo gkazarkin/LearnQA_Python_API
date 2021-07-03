@@ -8,7 +8,11 @@ obj = json.loads(json_text)
 
 key = "messages"
 if key in obj:
-    print(obj[key][1])
+    dict_1 = obj[key][1]
+    # print(dict_1)
+    key2 = "message"
+    second = dict_1[key2]
+    print(second)
 else:
     print(f"Ключа {key} в JSON нет")
 
