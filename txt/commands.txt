@@ -5,3 +5,5 @@ echo %ENV%
 python -m pytest tests/test_user_register.py
 #Zapusk konkretnogo testa
 python -m pytest tests/test_user_register.py -k test_create_user_with_wrong_email
+
+#Если запускаем из командной строки, то надо поменять путь в lib/logger.py (в начале класса)
