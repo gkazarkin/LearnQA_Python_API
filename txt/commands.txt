@@ -2,10 +2,6 @@
 set ENV=prod
 #4tobi proverit zna4enie peremennoi env
 echo %ENV%
-python -m pytest tests/test_user_auth.py
-
-#allure
-python -m pytest --alluredir=test_results/ tests/test_user_auth.py
-
-# Sgenerirovat ot4et Allure
-allure serve test_results/
+python -m pytest tests/test_user_register.py
+#Zapusk konkretnogo testa
+python -m pytest tests/test_user_register.py -k test_create_user_with_wrong_email

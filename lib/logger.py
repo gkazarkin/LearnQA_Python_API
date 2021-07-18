@@ -3,6 +3,9 @@ import os
 from requests import Response
 
 class Logger:
+    # Для запуска из IDE
+    # file_name = f"../logs/log_" + str(datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + ".log"
+    # Для запуска из консоли
     file_name = f"logs/log_" + str(datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + ".log"
 
     @classmethod

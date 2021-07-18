@@ -1,0 +1,5 @@
+#allure
+python -m pytest --alluredir=test_results/ tests/test_user_auth.py
+
+# Sgenerirovat ot4et Allure
+allure serve test_results/
