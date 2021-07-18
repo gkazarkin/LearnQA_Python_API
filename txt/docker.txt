@@ -1,0 +1,5 @@
+docker pull python
+docker build -t pytest_runner .
+docker run --rm --mount type=bind,src=C:\Users\glebk\Desktop\LearnQA_Python_API,target=/tests_project/ pytest_runner
+
+docker-compose up --build
