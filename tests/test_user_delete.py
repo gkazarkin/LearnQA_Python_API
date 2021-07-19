@@ -62,6 +62,7 @@ class TestUserDelete(BaseCase):
         assert response4.text == "User not found"
 
     # 3
+    @pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
     def test_delete_user_under_other_user_auth(self):
         # REGISTER 1
         register_data1 = self.prepare_registration_data()  # Sozdaem polzovatelya
